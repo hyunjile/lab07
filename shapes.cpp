@@ -64,6 +64,7 @@ class Circle : public Shape
 
 int main()
 {
+  //Shape ashape;
   vector<Shape *> shapeList;
   int selection = -1;
   while(selection != 0){
