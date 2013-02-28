@@ -65,7 +65,6 @@ class Circle : public Shape
 int main()
 {
   vector<Shape *> shapeList;
-  // Shape ashape; 
   int selection = -1;
   while(selection != 0){
     cout << "Choose an option:" << endl;
@@ -89,7 +88,6 @@ int main()
       cin >> b >> h;
       // Add the rest of the code to allocate a new rectangle
       //  and add it to the shapeList
-      shapeList.push_back(new Rectangle(b,h));
     }
     // Square case
     else if(selection == 3){
@@ -97,7 +95,6 @@ int main()
       cin >> s;
       // Add the rest of the code to allocate a new square
       //  and add it to the shapeList
-      shapeList.push_back(new Square(s));
     }
     // Circle case
     else if(selection == 4){
@@ -105,7 +102,6 @@ int main()
       cin >> r;
       // Add the rest of the code to allocate a new circle
       //  and add it to the shapeList
-      shapeList.push_back(new Circle(r));
     }
   }
 
